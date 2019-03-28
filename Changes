@@ -1,6 +1,6 @@
-Revision history for {{$dist->name}}
+Revision history for WWW-Mechanize-Chrome-PrepareChromium
 
-{{$NEXT}}
+0.005     2019-03-28 09:31:59-04:00 America/New_York
 
 - test code cleanup and sweeping
 - Minor tweaks to module
