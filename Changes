@@ -1,6 +1,6 @@
-Revision history for {{$dist->name}}
+Revision history for WWW-Mechanize-Chrome-PrepareChromium
 
-{{$NEXT}}
+0.002     2019-03-28 03:01:57-04:00 America/New_York
 
 - Doc fixes
 
