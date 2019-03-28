@@ -13,11 +13,10 @@ sub prepare_chromium {
   my $path_to_chromium = shift || '/Applications/Chromium.app/Contents/MacOS/Chromium';
   my $port             = shift || '9222';
 
-  # running is a port number, 'running', or 0
+  # $running is set to one of the following: port number, 'running', or 0
   my $running = _get_chromium_status();
 
   # chromium is running on a debugging port, so we are done
-
   return $running if ($running =~ /\d\d+/);
 
   # take appropriate action based on whether chrome is running
@@ -25,6 +24,7 @@ sub prepare_chromium {
                   : _start   ($path_to_chromium, $port);
 }
 
+# sets the $running variable for prepare_chromium function
 sub _get_chromium_status {
   # get the process table
   my $ptable  = Proc::ProcessTable->new;
@@ -41,19 +41,22 @@ sub _get_chromium_status {
   return 0;
 }
 
+# start Chromium
 sub _start {
   my ($path, $port) = @_;
-  my $failed = system "$path --args --remote-debugging-port=$port &";
+  my $failed = system "$path --remote-debugging-port=$port &";
   die 'Could not start Chromium. Aborting.' if $failed;
   return $port;
 }
 
+# quit Chromium
 sub _quit {
   # we call a special bash wrapper function to avoid errors from EyeTv bug
   system ('bash', '-c', q{ source ~/.bash_profile;  osascript -e 'quit app "Chromium"'});
   #system ('/bin/bash', '-ic', q{ osascript -e 'quit app "Chromium"'} );
 }
 
+# restart Chromium
 sub _restart {
   _quit();
   return _start(@_);
