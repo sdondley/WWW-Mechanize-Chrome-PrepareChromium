@@ -4,7 +4,7 @@ WWW::Mechanize::Chrome::PrepareChromium - prepares Chromium for use by WWW::Mech
 
 # VERSION
 
-version 0.005
+version 0.006
 
 # SYNOPSIS
 
@@ -74,7 +74,7 @@ from your repository :)
 # BUGS AND LIMITATIONS
 
 You can make new bug reports, and view existing ones, through the
-web interface at [http://github.com/sdondley/WWW-Mechanize-Chrome-PrepareChromium/issues](http://github.com/sdondley/WWW-Mechanize-Chrome-PrepareChromium/issues).
+web interface at [https://github.com/sdondley/WWW-Mechanize-Chrome-PrepareChromium/issues](https://github.com/sdondley/WWW-Mechanize-Chrome-PrepareChromium/issues).
 
 # INSTALLATION
 
