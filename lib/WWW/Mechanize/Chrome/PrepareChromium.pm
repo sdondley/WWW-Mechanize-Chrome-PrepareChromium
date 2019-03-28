@@ -89,7 +89,7 @@ requires to work.
 
 Starts or restarts Chrome as necessary with a debugging port. Returns the
 debugging port number if already being used or opens a port on the default
-port, C<9222> if Chrome needs to be started.
+port, C<9222>, if Chrome needs to be started.
 
 C<$path_to_chromium> defaults to C</Applications/Chromium.app/Contents/MacOS/Chromium>
 

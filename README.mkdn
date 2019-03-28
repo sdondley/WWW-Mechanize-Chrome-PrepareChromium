@@ -4,7 +4,7 @@ WWW::Mechanize::Chrome::PrepareChromium - prepares Chromium for use by WWW::Mech
 
 # VERSION
 
-version 0.002
+version 0.003
 
 # SYNOPSIS
 
@@ -17,7 +17,7 @@ version 0.002
 Ensures a Chromium browser has a remote debugging port available which [WWW::Mechanize::Chrome](https://metacpan.org/pod/WWW::Mechanize::Chrome)
 requires to work.
 
-# FUNCTIONS
+#### FUNCTIONS
 
 ## prepare\_chromium()
 
@@ -29,7 +29,7 @@ requires to work.
 
 Starts or restarts Chrome as necessary with a debugging port. Returns the
 debugging port number if already being used or opens a port on the default
-port, `9222` if Chrome needs to be started.
+port, `9222`, if Chrome needs to be started.
 
 `$path_to_chromium` defaults to `/Applications/Chromium.app/Contents/MacOS/Chromium`
 
