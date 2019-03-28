@@ -4,7 +4,7 @@ WWW::Mechanize::Chrome::PrepareChromium - prepares Chromium for use by WWW::Mech
 
 # VERSION
 
-version 0.004
+version 0.005
 
 # SYNOPSIS
 
