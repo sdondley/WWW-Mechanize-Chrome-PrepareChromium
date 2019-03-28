@@ -80,8 +80,11 @@ Ensures a Chromium browser has a remote debugging port available which L<WWW::Me
 requires to work.
 
 =func prepare_chromium()
+
 =func prepare_chromium('', $port);
+
 =func prepare_chromium($path_to_chromium);
+
 =func prepare_chromium($path_to_chromium, $port);
 
 Starts or restarts Chrome as necessary with a debugging port. Returns the
